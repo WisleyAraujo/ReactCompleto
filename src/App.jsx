@@ -1,12 +1,8 @@
 import "./App.css";
 import React from "react";
-import Produto from "./components/Produto.jsx";
+import ProdutoLocalStorage from "./components/ProdutoLocalStorage.jsx";
 function App() {
-  return (
-    <div>
-      <Produto />
-    </div>
-  );
+  return <ProdutoLocalStorage />;
 }
 
 export default App;
