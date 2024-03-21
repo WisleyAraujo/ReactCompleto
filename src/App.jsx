@@ -1,8 +1,8 @@
 import "./App.css";
 import React from "react";
-import ProdutoLocalStorage from "./components/ProdutoLocalStorage.jsx";
+import UseRef from "./components/UseRef.jsx";
 function App() {
-  return <ProdutoLocalStorage />;
+  return <UseRef />;
 }
 
 export default App;
