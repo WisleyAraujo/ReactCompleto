@@ -1,8 +1,11 @@
 import "./App.css";
-import React from "react";
-import UseRef from "./components/UseRef.jsx";
+import UseMemoria from "./components/UseMemoria.jsx";
 function App() {
-  return <UseRef />;
+  return (
+    <div>
+      <UseMemoria/>
+    </div>
+  );
 }
 
 export default App;
