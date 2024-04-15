@@ -1,12 +1,14 @@
 import "./App.css";
+import { GlobalStorageDesafio } from "./components/GlobalContextDesafio.jsx";
+import Limpar from "./components/Limpar.jsx";
 import Produtos from "./components/Produtos.jsx";
-import { GlobalStorage } from "./components/GlobalContext.jsx";
 
 function App() {
   return (
-    <GlobalStorage>
+    <GlobalStorageDesafio>
       <Produtos />
-    </GlobalStorage>
+      <Limpar />
+    </GlobalStorageDesafio>
   );
 }
 

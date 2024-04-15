@@ -1,14 +1,19 @@
 import React from "react";
-import { GlobalContext, GlobalStorage } from "./GlobalContext.jsx";
+import {
+  GlobalContextDesafio,
+  GlobalStorageDesafio,
+} from "./GlobalContextDesafio";
 
 function Produtos() {
-  const global = React.useContext(GlobalContext);
+  const { produto } = React.useContext(GlobalContextDesafio);
+  // if (produto === null) return null;
 
   return (
     <div>
-      Produtos: {global.contar}
-      <br />
-      <button onClick={() => global.addDois()}>Adicionar</button>
+      {produto &&
+        produto.map((produto, index) => (
+          <li key={index}>{`Produto: ${produto.nome} R$:${produto.preco} `}</li>
+        ))}
     </div>
   );
 }
