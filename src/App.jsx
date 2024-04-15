@@ -1,10 +1,12 @@
 import "./App.css";
-import UseMemoria from "./components/UseMemoria.jsx";
+import Produtos from "./components/Produtos.jsx";
+import { GlobalStorage } from "./components/GlobalContext.jsx";
+
 function App() {
   return (
-    <div>
-      <UseMemoria/>
-    </div>
+    <GlobalStorage>
+      <Produtos />
+    </GlobalStorage>
   );
 }
 
